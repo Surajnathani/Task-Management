@@ -1,0 +1,238 @@
+.homeContainer {
+    height: 80vh;
+}
+
+/* login and register */
+.form {
+    width: 100%;
+    min-height: 80vh;
+    display: grid;
+    place-items: center;
+}
+
+.input-field {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 30px;
+    border: 1px solid black;
+    padding: 60px 40px;
+    border-radius: 10px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    height: 45px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+.button {
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #f26e56;
+    color: white;
+    border-radius: 10px;
+    transition: 0.1s linear;
+    padding: 0 20px;
+}
+
+.button:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    cursor: pointer;
+}
+
+.loginLink {
+    text-align: center;
+    font-size: 17px;
+
+}
+
+.login {
+    text-decoration: underline;
+    color: #f26e56;
+}
+
+.registerLink {
+    text-align: center;
+    font-size: 17px;
+}
+
+.register {
+    text-decoration: underline;
+    color: #f26e56;
+}
+
+.passwordFiled {
+    position: relative;
+    width: 100%;
+}
+
+.eyeIcon {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    font-size: 20px;
+    color: #868686;
+    cursor: pointer;
+}
+
+/* home */
+.cards {
+    padding: 70px 20px 20px 20px;
+    width: 100%;
+    height: auto;
+    column-count: 4;
+}
+
+/* add notes */
+.addInputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+
+textarea {
+    resize: none;
+    height: auto;
+    min-height: 300px !important;
+}
+
+/* error page */
+.error {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.errorHeading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.errorHeading h1 {
+    font-size: 15rem;
+    text-align: center;
+}
+
+.errorHeading p {
+    font-size: 40px;
+    text-align: center;
+}
+
+.errorButton {
+    display: grid;
+    place-items: center;
+    width: max-content;
+    background-color: #f26e56;
+    color: white;
+    border-radius: 10px;
+    transition: 0.1s linear;
+    padding: 12px 20px;
+}
+
+
+.errorButton:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    cursor: pointer;
+}
+
+/* responsive */
+@media screen and (max-width: 1024px) {
+    .cards {
+        column-count: 2;
+    }
+
+    .errorHeading h1 {
+        font-size: 13rem;
+    }
+
+    .errorHeading p {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cards {
+        column-count: 1;
+        padding: 40px 0 20px 0
+    }
+
+    .input-field {
+        width: 80%;
+    }
+
+    .errorHeading h1 {
+        font-size: 11rem;
+    }
+
+    .errorHeading p {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 657px) {
+    .input-field {
+        width: 70%;
+    }
+
+    .loginLink,
+    .registerLink {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 537px) {
+    .input-field {
+        width: 90%;
+        padding: 60px 20px;
+    }
+
+    .AccHeading {
+        font-size: 30px !important;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .input-field {
+        width: 90%;
+    }
+
+    .loginLink,
+    .registerLink {
+        font-size: 15px;
+    }
+
+    .errorHeading h1 {
+        font-size: 9rem;
+    }
+
+    .errorHeading p {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,75 @@
+.card {
+    background-color: #fff9de;
+    width: auto;
+    height: max-content;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 0 20px 0;
+    break-inside: avoid;
+    display: grid;
+    gap: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    line-break: anywhere;
+    font-size: 18px;
+}
+
+.titles h3 {
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    font-size: 22px;
+    cursor: pointer;
+    color: #8e8e8ef9;
+}
+
+.para {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.icon:hover {
+    color: #1c1c1c;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .para {
+        font-size: 15px;
+    }
+
+    .titles h3 {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .para {
+        font-size: 14px;
+    }
+
+    .titles h3 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+    .titles h3 {
+        font-size: 16px;
+    }
+}
