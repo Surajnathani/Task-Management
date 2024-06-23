@@ -12,7 +12,7 @@ const cookieParser = require("cookie-parser");
 
 // Configure CORS options which Allow requests from this origin
 const corsOptions = {
-  origin: "task-management-apk.vercel.app",
+  origin: "https://task-management-apk.vercel.app",
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
 };
